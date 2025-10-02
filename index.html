@@ -3,72 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Landing Page - TheOdinProject</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container" id="container">
-        <div class="header">
-            <nav class="navbar">
-                <a href="#container" class="logo">MyLogo</a>
-                <a href="#home">Features</a>
-                <a href="#about">Testimonials</a>
-                <a href="#services">Get Started</a>
-            </nav>
+    <nav class="top">
+        <div class="logo"><a href="#top">Landing Page</a></div>
+        <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div class="content">
-            <div class="main">
-                <h1>Welcome to My Website</h1>
-                <hr style="width:0px;">
-                <p>This is a simple landing page created with HTML and CSS.</p>
-                <hr style="width:0px;">
-                <button class="learn-more">Learn More</button>
-                <img src="./media/placeholder.jpg" alt="Placeholder Image">
-            </div>
-            <hr>
-            <h2 id="info-header">Some Information</h2>
-            <div class="info-box">
-                <figure>
-                    <img src="./media/placeholder.jpg" alt="Info Image 1">
-                    <figcaption>Info Box 1</figcaption>
-                </figure>
-                <figure>
-                    <img src="./media/placeholder.jpg" alt="Info Image 2">
-                    <figcaption>Info Box 2</figcaption>
-                </figure>
-                <figure>
-                    <img src="./media/placeholder.jpg" alt="Info Image 3">
-                    <figcaption>Info Box 3</figcaption>
-                </figure>
-                <figure>
-                    <img src="./media/placeholder.jpg" alt="Info Image 4">
-                    <figcaption>Info Box 4</figcaption>
-                </figure>
-            </div>    
+    </nav>
+
+    <!-- Launch page -->
+    <div class="hero" id="hero">
+        <div class="hero-wrapper">
+            <h1>YourWebsite</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos minima, nesciunt in porro perferendis amet eligendi pariatur officiis odio dolor repellendus commodi ut nemo quas repudiandae, earum ex neque.</p>
+            <a href="#pricing" class="cta-button">Get Started</a>
         </div>
-        <hr>
-        <div id="quote">
-            <blockquote>
-                "This is a sample quote to highlight something important."
-            </blockquote>
-            <h2>- Author Name</h2>
-        </div>
-        <hr>
-        <div id="footer">
-            <div>
-                <div class="actioncall">
-                    <h2>Ready to get started?</h2>
-                    <button class="learn-more">Learn More</button>
-                </div>
-                <div class="social-icons">
-                    <a href="#"><img src="./media/placeholder.jpg" alt="Facebook"></a>
-                    <a href="#"><img src="./media/placeholder.jpg" alt="Twitter"></a>
-                    <a href="#"><img src="./media/placeholder.jpg" alt="Instagram"></a>
-                    <a href="#"><img src="./media/placeholder.jpg" alt="Reddit"></a>
-                </div>
-                <p>&copy; 2025 co3ndev. All rights reserved.</p>
-            </div>
-        </div>
+        
     </div>
+
+    <section class="about" id="about">
+        <h2>About Section</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quo vero neque tenetur perferendis amet magnam blanditiis ex rerum, dignissimos sed cumque, animi facere error iste? Natus dolorem iusto nostrum.</p>
+        <form class="signup-form" id="signup-form">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button" id="signup-button">CallToAction</button>
+        </form>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Features</h2>
+        <div class="feature">
+            <h3>Feature 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature 2</h3>
+            <p>GIure quo vero neque tenetur perferendis amet magnam.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature 4</h3>
+            <p>AGIure quo vero neque tenetur perferendis amet magnam.</p>
+        </div>  
+    </section>
+    <section class="pricing" id="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-plan">
+            <h3>Basic</h3>
+            <p>$xx.xx/month</p>
+            <ul>
+                <li>Lorem ipsum</li>
+                <li>Dolor sit</li>
+                <li>Amet magnum.</li>
+            </ul>
+            <a href="#" class="cta-button" id="choose-basic">Choose Plan</a>
+            <h5><em>30-day free trial</em></h5>
+        </div>
+        <div class="pricing-plan">
+            <h3>Pro</h3>
+            <p>$xx.xx/month</p>
+            <ul>
+                <li>Lorem ipsum</li>
+                <li>Dolor sit</li>
+                <li>Amet magnum.</li>
+            </ul>
+            <a href="#" class="cta-button" id="choose-pro">Choose Plan</a>
+            <h5><em>30-day free trial</em></h5>
+        </div>
+        <div class="pricing-plan">
+            <h3>Enterprise</h3>
+            <p>Contact us for pricing</p>
+            <ul>
+                <li>Lorem ipsum</li>
+                <li>Dolor sit</li>
+                <li>Amet magnum.</li>
+            </ul>
+            <a href="#" class="cta-button" id="choose-enterprise">Contact Us</a>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Need help or want to learn more?</h2>
+        <h4><em>Complete the form below and a member of our customer service team will reply within 24 hours.</em></h4>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="subject" name="subject" placeholder="Subject" required></textarea>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button" id="contactbutton">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 co3ndev. All rights reserved.</p>
+    </footer>
 </body>
 </html>
